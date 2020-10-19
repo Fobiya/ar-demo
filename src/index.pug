@@ -1,0 +1,209 @@
+doctype
+
+html(lang='en', dir='rtl')
+  head
+    - var title = "Demo Coursecode"
+    title #{title}
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+
+    link(rel='icon', type='static/ico', href='img/favicon.svg?v=13')
+
+    meta(property='og:url', content='#{title}')
+    meta(property='og:image', content='/img/ogg.png?v=1.2')
+    meta(property='og:image:width', content='300')
+    meta(property='og:image:height', content='300')
+
+    meta(property='og:title', content='#{title}')
+    meta(property='og:site_name', content='#{title}')
+    meta(property='og:description', content='#{title}')
+    meta(property='og:type', content='#{title}')
+    meta(name='description', content='#{title}')
+    meta(name='keywords', content='#{title}')
+    
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap')
+   
+
+
+
+    
+  body(data-img="img/1.png")
+    //bar-long
+    .bar-long
+    //END bar-long
+
+
+    header
+     .container
+      .row
+        .col.m8.offset-m4.s12.l6.xl4.offset-xl8.offset-l6
+          img.images(srcset='img/logo.svg', alt='logo')
+          .box__form
+            h4 ﻣﺮﺣﺒﺎً، ﻳﺴﺮّﻧﺎ ﻟﻘﺎؤك
+ 
+            form(method='POST', action='javascript:void(null);')
+              // Hidden Required Fields
+              .form_input
+                label ةينكلا
+                span.field.langdaat(data-lang="it")
+                  input.phone_mask.lang(type='tel', name='phone', required='', value='', placeholder='____-__-__')
+                  .box__selector
+                    a(href="#", data-nam="rw")
+                      img.video(srcset='img/rw.png', alt='rw')
+                      span Subtitle 1 
+                    a(href="#", data-nam="it")
+                      img.video(srcset='img/it.png', alt='it')
+                      span Subtitle 2 
+                    a(href="#", data-nam="co")
+                      img.video(srcset='img/co.png', alt='co')
+                      span Subtitle 3 
+                    a(href="#", data-nam="ho")
+                      img.video(srcset='img/ho.png', alt='ho')
+                      span Subtitle 4 
+                      
+                    a(href="#", data-nam="rw")
+                      img.video(srcset='img/rw.png', alt='rw')
+                      span Subtitle 5 
+                    a(href="#", data-nam="it")
+                      img.video(srcset='img/it.png', alt='it')
+                      span Subtitle 6 
+                    a(href="#", data-nam="co")
+                      img.video(srcset='img/co.png', alt='co')
+                      span Subtitle 7 
+                    a(href="#", data-nam="ho")
+                      img.video(srcset='img/ho.png', alt='ho')
+                      span Subtitle 8                    
+                    
+              .form_input
+                label ةينكلا
+                span.field
+                  input.mail(type='text', name='name2', required='', value='', placeholder='ةينكلا')
+              .form_input
+                label ةينكلا
+                span.field
+                  input.mail(type='text', name='name2', required='', value='', placeholder='ةينكلا')
+
+              button.orang(type='submit', name='send') لجس
+      .row
+        .col.m12.s12.l6.xl4
+          .block
+            .cont
+              h5 اﻧﻀﻢ إﻟﻴﻨﺎ اﻟﻴﻮم
+              p اﺣﺼﻞ ﻋﻠﻰ 20 ﻳﺪور اﻟﺤﺮة!
+
+        .col.m12.s12.l6.xl4
+          .block
+            .cont
+              h5 اﻧﻀﻢ إﻟﻴﻨﺎ اﻟﻴﻮم
+              p اﺣﺼﻞ ﻋﻠﻰ 20 ﻳﺪور اﻟﺤﺮة!
+
+        .col.m12.s12.l12.xl4
+          .block
+            .cont
+              h5 اﻧﻀﻢ إﻟﻴﻨﺎ اﻟﻴﻮم
+              p اﺣﺼﻞ ﻋﻠﻰ 20 ﻳﺪور اﻟﺤﺮة!
+
+    section.section__1
+     .container
+      .row
+        .col.m12.s12.l7.xl7
+        
+            ul.block_list
+              li
+                .box_
+                  img.icon(srcset='img/icon_1.svg', alt='icon_1')
+                p لعبة ورق لايف
+              li
+                .box_
+                  img.icon(srcset='img/icon_2.svg', alt='icon_2')
+                p ةيحلا ركوبلا ةبعل
+              li
+                .box_
+                  img.icon(srcset='img/icon_3.svg', alt='icon_3')
+                p ةيحلا تيلورلا
+        
+        .col.m12.s12.l5.xl5
+          a.play(href="#" target="_blank")
+            img.video(srcset='img/video.png', alt='video')
+
+
+    section.section__2
+     .container
+      .row
+        .col.m12.s12.l3.xl3
+          h4 أعلى 3 أسباب للعب في YYY - كازينو
+        
+        .col.m12.s12.l3.xl3
+          .box_
+            img.icon(srcset='img/section__2_icon_3.svg', alt='section__2_icon_3')
+          p احتمالات الفوز احتمالات الفوز 
+
+        .col.m12.s12.l3.xl3
+          .box_
+             img.icon(srcset='img/section__2_icon_2.svg', alt='section__2_icon_2')
+          p اﻟﻤﻜﺎﻓﺂت ﻋﻠﻰ اﻟﺎﻧﺘﺮﻧﺖ اﻟﻤﻜﺎﻓﺂت ﻋﻠﻰ اﻟﺎﻧﺘﺮﻧﺖ ﻟﺎﻧﺘﺮﻧﺖ
+
+        .col.m12.s12.l3.xl3
+          .box_
+            img.icon(srcset='img/section__2_icon_1.svg', alt='section__2_icon_1')
+          p ءالمعلا معد 24/7
+
+
+    section.section__999(hidden)
+       .container
+        .row
+          .col.m12.s12.l8.xl7
+            .block
+
+              .block__form
+                form(method='POST', action='javascript:void(null);')
+                  // Hidden Required Fields
+                  .form_input
+                    span.field
+                      input.name(type='text', name='name', required='', value='', placeholder='Name')
+                  .form_input
+                    span.field
+                      input.mail(type='email', name='email', required='', value='', placeholder='Email')
+                  .form_input
+                    span.field
+                      input.ferstname(type='text', name='subject', required='', value='', placeholder='Subject')
+                  .form_input
+                    span.field
+                      textarea.textarea(name='message', required='', value='', placeholder='Message')
+
+                  button.blue(type='submit', name='send') SEND
+
+
+      
+    footer
+      .container
+        .row
+          .col.m12.s12.l12.xl12
+            img.baner_1(srcset='img/baner_1.svg', alt='baner_1')
+            img.baner_2(srcset='img/baner_2.svg', alt='baner_2')
+        .row
+          .col.m12.s12.l12.xl12
+            .block
+
+              .box_
+                img.icon__footer(srcset='img/Secur_icn.svg', alt='icon__footer')
+              .cont
+                h4 أﻓﻀﻞ. ﺳﻮﻳﺎ. ﻣﺄﻣﻮن.
+                p دودحلا لخاد ةيلوؤسمب بعللا
+              
+              img.v18(srcset='img/v18.svg', alt='18')
+
+        .row
+          .col.m12.s12.l12.xl12
+            p 888 Holdings Plc, 601-701 Europort, GIBRALTAR. Telephone: +350-20049800. Email: Info@888holdingsplc.com Online Casino & Online Poker 
+              br 
+              | 888 is the best online Casino and Poker site in the world. Discover first-class  online casino gambling at 888.com with more bonus giveaways, promotions, and events than at any other casino online! From the free casino download to the amazing casino games, the entertainment never ends at 888casino. Experience the rush of Las Vegas online gambling from the comfort of your own home on ultra-realistic, industry-acclaimed 3D software. Choose from over 35 amazing game options ! Challenge your skills with online BlackJack or Online Roulette in the largest casino online and enjoy great bonuses and best odds! Play Craps, Baccarat and at 888 Bingo or head over to the incredible array of Slot Machines; Play casino fruit machine games in 888.com’s online casino, spin the reels in one of the many great games our casino offers! 888.com not only features classic online slots but progressives and Video Slots, as well! This is the time to start playing and to enjoy the game at 888 casino.
+
+
+
+    
+
+
+
+
